@@ -16,7 +16,8 @@ const Route = createBrowserRouter([
         children:[
             {
                 path:"/",
-                element:<Home></Home>
+                element:<Home></Home>,
+                loader: () => fetch('http://localhost:5000/house')
             }
         ]
     },
@@ -26,7 +27,8 @@ const Route = createBrowserRouter([
         children:[
             {
                 path:"allhouse",
-                element:<AllHouse></AllHouse>
+                element:<AllHouse></AllHouse>,
+                loader: () => fetch('http://localhost:5000/house')
             },
             {
                 path:"booked",
