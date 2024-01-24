@@ -17,7 +17,7 @@ const Route = createBrowserRouter([
             {
                 path:"/",
                 element:<Home></Home>,
-                loader: () => fetch('http://localhost:5000/house')
+                loader: () => fetch('https://house-hunter-server-coral-xi.vercel.app/house')
             }
         ]
     },
@@ -28,7 +28,7 @@ const Route = createBrowserRouter([
             {
                 path:"allhouse",
                 element:<AllHouse></AllHouse>,
-                loader: () => fetch('http://localhost:5000/house')
+                loader: () => fetch('https://house-hunter-server-coral-xi.vercel.app/house')
             },
             {
                 path:"booked",

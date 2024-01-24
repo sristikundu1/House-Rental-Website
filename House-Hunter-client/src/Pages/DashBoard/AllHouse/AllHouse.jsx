@@ -28,7 +28,7 @@ const AllHouse = () => {
         console.log(newHouse);
 
 
-        fetch(" http://localhost:5000/house", {
+        fetch(" https://house-hunter-server-coral-xi.vercel.app/house", {
             method: 'POST',
             headers: {
                 'content-type': "application/json"
